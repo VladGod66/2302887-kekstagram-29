@@ -28,7 +28,7 @@ const createIdGenerator = (start, up) => {
 // Функция устранения дребезга обращений
 
 const debounce = (callback, timeoutDelay) => {
-  // Используем замыкание, чтобы id таймаута приклеился к возвращаемой функции с setTimeout для его перезаписи
+  // Используем замыкание, чтобы id таймаута "приклеился" к возвращаемой функции с setTimeout для его перезаписи
   let timeoutId;
 
   return (...rest) => {
@@ -54,7 +54,7 @@ const randomArraySort = (data) => {
 const sortRandom = (data, count) => randomArraySort(data).slice(0, count);
 
 // Функция-колбэк сортировки фото по количеству комментариев по убыванию
-const sortComments = (data) => data.sort((a, b) => b.comments.length - a.comments.length);
+const sortComments = (data, count) => data.sort((a, b) => b.comments.length - a.comments.length).slice(0, count);
 
 // Функция удаления элемента
 const removeElement = (element) => {

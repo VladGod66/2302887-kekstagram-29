@@ -6,7 +6,9 @@ import { debounce, removeElement, sortComments, sortRandom } from './utils.js';
 //Определяем время задержки запроса серверу для устранения "дребезга"
 const DELAY_TIME = 600;
 //Определяем количество случайных фото для отрисовки
-const COUNT_RANDOM_PHOTOS = 10;
+const COUNT_RANDOM_PHOTOS = 11;
+//Определяем количество обсуждаемых фото для отрисовки
+const COUNT_COMMENT_PHOTOS = 11;
 
 // Находим секцию сортировки фотоминиатюр
 const photosSortsElement = document.querySelector('.img-filters');
@@ -27,7 +29,7 @@ const updatePhotos = (targetElement, photos) => {
   ////Если нажата кнопка Обсуждаемые
   if (targetElement === sortCommentElement) {
     //Сортируем массив по убыванию количества комментариев
-    copyPhotos = sortComments(copyPhotos);
+    copyPhotos = sortComments(copyPhotos, COUNT_COMMENT_PHOTOS);
   }
   //Удаляем все ранее отрисованные фото в галерее
   document.querySelectorAll('.picture').forEach(removeElement);
