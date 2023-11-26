@@ -1,9 +1,9 @@
 // Модуль публикации нового фото
 
-import { resetScale } from './zoom-foto.js';
-import { resetEffect } from './effects-photo.js';
-import {sendData} from './creates-api.js';
-import {showSuccessPopup , showErrorPopup} from './opens-popup.js';
+import { resetScale } from './zoom-foto.mjs';
+import { resetEffect } from './effects-photo.mjs';
+import {sendData} from './creates-api.mjs';
+import {showSuccessPopup , showErrorPopup} from './opens-popup.mjs';
 
 // Определяем допустимое количество хэштэгов
 const MAX_HASHTAGS_COUNT = 5;

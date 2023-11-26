@@ -53,7 +53,7 @@ main {
 
 .modal-open {
   height: 100vh;
-  overflow: hidden;
+  overflow: auto;
 }
 
 
@@ -190,7 +190,7 @@ main {
   display: grid;
   grid-gap: 10px;
 
-  -ms-grid-columns: (1fr)[7];
+  -ms-grid-columns: (1fr);
       grid-template-columns: repeat(7, 1fr);
 }
 
@@ -768,8 +768,8 @@ main {
 
 .big-picture__preview {
   position: absolute;
-  top: 60px;
-  left: 50%;
+  top: 70px;
+  left: 50.7%;
 
   max-width: 600px;
   min-height: 600px;
@@ -1350,7 +1350,7 @@ main {
   }
 
   .pictures {
-    -ms-grid-columns: (1fr)[5];
+    -ms-grid-columns: (1fr);
     grid-template-columns: repeat(5, 1fr);
   }
 
@@ -1371,7 +1371,7 @@ main {
   }
 
   .pictures {
-    -ms-grid-columns: (1fr)[3];
+    -ms-grid-columns: (1fr);
     grid-template-columns: repeat(3, 1fr);
   }
 

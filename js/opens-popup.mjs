@@ -1,6 +1,6 @@
 // Модуль показа инфо попапа с результатами попытки отправки публикуемого фото на сервер
 
-import {onDocumentEscKeydown} from './upload-form.js';
+import {onDocumentEscKeydown} from './upload-form.mjs';
 
 // Находим шаблон и получаем содержимое шаблона попапа с сообщением об успешной публикации фото
 const successTemplate = document.querySelector('#success').content.querySelector('.success');

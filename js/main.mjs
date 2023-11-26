@@ -1,8 +1,8 @@
-import { getData, showAlert } from './creates-api.js';
-import { renderGallery } from './renders-gallery.js';
-import { userFotoFormSubmit } from './upload-form.js';
-import { sortingGallery } from './sort-photos.js';
-import './upload-photo.js';
+import { getData, showAlert } from './creates-api.mjs';
+import { renderGallery } from './renders-gallery.mjs';
+import { userFotoFormSubmit } from './upload-form.mjs';
+import { sortingGallery } from './sort-photos.mjs';
+import './upload-photo.mjs';
 
 //Делаем запрос на получение массива объектов фото от сервера
 getData()

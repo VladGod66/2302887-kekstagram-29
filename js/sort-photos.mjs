@@ -1,7 +1,7 @@
 // Модуль сортировки фото в галерее
 
-import { renderGallery } from './renders-gallery.js';
-import { debounce, removeElement, sortComments, sortRandom } from './utils.js';
+import { renderGallery } from './renders-gallery.mjs';
+import { debounce, removeElement, sortComments, sortRandom } from './utils.mjs';
 
 //Определяем время задержки запроса серверу для устранения "дребезга"
 const DELAY_TIME = 600;
