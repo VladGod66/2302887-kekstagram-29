@@ -6,9 +6,9 @@ import { debounce, removeElement, sortComments, sortRandom } from './utils.mjs';
 //Определяем время задержки запроса серверу для устранения "дребезга"
 const DELAY_TIME = 600;
 //Определяем количество случайных фото для отрисовки
-const COUNT_RANDOM_PHOTOS = 11;
+const COUNT_RANDOM_PHOTOS = 6;
 //Определяем количество обсуждаемых фото для отрисовки
-const COUNT_COMMENT_PHOTOS = 11;
+const COUNT_COMMENT_PHOTOS = 6;
 
 // Находим секцию сортировки фотоминиатюр
 const photosSortsElement = document.querySelector('.img-filters');
