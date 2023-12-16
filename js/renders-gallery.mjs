@@ -32,9 +32,9 @@ const onContainerClick = (evt) => {
 const renderGallery = (currentPictures) => {
   // Записываем текущиё массив фото в рабочий массив
   pictures = currentPictures;
-  // Пока клика нет вызываем колбэк функции отрисовки фотоминиатюр и отрисовываем галерею
+  // Вызываем функцию отрисовки фотоминиатюр и отрисовываем галерею с фотоминиатюрами
   renderMiniPhotos(pictures, container);
-  // Подписываем общий контейнер галереи миниатюр на событие click
+  // Подписываем общий контейнер галереи миниатюр на открытие модального окна с полноразмерным фото по событию click
   container.addEventListener('click', onContainerClick);
 };
 
