@@ -120,9 +120,12 @@
                     <input class="text__hashtags" name="hashtags" placeholder="#ХэшТег">
                   </div>
                   <div class="img-upload__field-wrapper">
-                    <textarea class="text__description" name="description" placeholder="Ваш комментарий..."
+                    <textarea class="text__description" name="description" placeholder="Ваш комментарий..." required
+                    data-pristine-minlength="5"
+                    data-pristine-minlength-message="Комментарий должен быть длиннее 5 символов !"
                     data-pristine-maxlength="140"
-                    data-pristine-maxlength-message="Комментарий не может быть длиннее 140 символов !"></textarea>
+                    data-pristine-maxlength-message="Комментарий не может быть длиннее 140 символов !"
+                    data-pristine-required-message="Это поле обязательно к заполнению"></textarea>
                   </div>
                 </fieldset>
 

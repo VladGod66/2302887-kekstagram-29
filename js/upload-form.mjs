@@ -163,7 +163,7 @@ pristine.addValidator(
 
 function onTextKeyUp() {
   // Если все функции валидации выдают true
-  if (hasUniqueTags(hashtagField.value) && isValidTag(hashtagField.value) && hasValidCount(hashtagField.value) && descriptionField.value.length < 141) {
+  if (hasUniqueTags(hashtagField.value) && isValidTag(hashtagField.value) && hasValidCount(hashtagField.value) && descriptionField.value.length < 141 && descriptionField.value.length > 4) {
     // Кнопку Опубликовать не блокируем
     buttonSubmit.disabled = false;
     // В противном случае кнопку блокируем добавляя свойство css disabled элементу кнопки
