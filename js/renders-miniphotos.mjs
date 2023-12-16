@@ -40,7 +40,7 @@ const renderMiniPhotos = (pictures, container) => {
     // Записывем этот элемент в конец фрагмента DOM-элементов
     fragment.append(photo);
   });
-  // Добавляем содержимое фрагмента DOM-дерева в определённое в модуле renders-page контейнер-место DOM-дерева страницы
+  // Добавляем содержимое фрагмента DOM-дерева в определяемое параметром container место DOM-дерева
   container.append(fragment);
 };
 
