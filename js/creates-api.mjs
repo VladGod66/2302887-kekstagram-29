@@ -1,7 +1,7 @@
 // Модуль взаимодействия с сервером
 
 // Определяем базовый путь к серверу и Приложению kekstagram на нём
-const BASE_URL = 'https://49.javascript.pages.academy/kekstagram';
+const BASE_URL = 'https://29.javascript.pages.academy/kekstagram';
 // Определяем путь обращения (маршрут) для получения и отправки данных относительно корневого каталога Приложения kekstagram на сервере
 const Route = {
   GET_DATA: '/data',
