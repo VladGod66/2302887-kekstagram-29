@@ -1,7 +1,7 @@
 // Модуль взаимодействия с сервером
 
 // Определяем базовый путь к серверу и Приложению kekstagram на нём
-const BASE_URL = 'https://29.javascript.pages.academy/kekstagram';
+const BASE_URL = 'https://49.javascript.pages.academy/kekstagram';
 // Определяем путь обращения (маршрут) для получения и отправки данных относительно корневого каталога Приложения kekstagram на сервере
 const Route = {
   GET_DATA: '/data',
@@ -24,7 +24,7 @@ const serverRequest = (route, errorText, method = 'GET', body = null) =>
       // Проверяем свойство объекта ответа сервера .ок и если оно false
       if (!response.ok) {
         // Бросаем ошибку запроса (исключение) к серверу, выводим текст ошибки и переходим в секцию catch
-        throw new Error('Ошибка сервера:'`${response.status} - ${response.statusText}``попробуйте позже`);
+        throw new Error(`Ошибка сервера: ${response.status} - ${response.statusText} попробуйте позже`);
       }
       // Возвращаем результат выполнения метода json к данным ответа сервера (т.е. преобразуем строку с данными json в объект js - десерализуем/распарсим)
       return response.json();

@@ -204,7 +204,7 @@ const userFotoFormSubmit = () => {
           // Проверяем свойство объекта ответа сервера .ок и если оно false
           if (!response.ok) {
           // Бросаем ошибку запроса (исключение) к серверу с сообщением и переходим в секцию catch
-            throw new Error('Ошибка сервера:'`${response.status} - ${response.statusText}``попробуйте позже`);
+            throw new Error(`Ошибка сервера: ${response.status} - ${response.statusText} попробуйте позже`);
           }
           // Закрываем модальное окно загрузки фото
           hideModal();
