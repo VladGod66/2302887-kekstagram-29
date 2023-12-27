@@ -1,3 +1,5 @@
+//Основной модуль сайта-приложения
+
 import { getData, showAlert } from './creates-api.mjs';
 import { renderGallery } from './renders-gallery.mjs';
 import { userFotoFormSubmit } from './upload-form.mjs';
