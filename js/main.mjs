@@ -16,8 +16,8 @@ getData()
     sortingGallery(usersPhotos);
   })
   // А если он перейдёт в состояние rejected (выполнено с ошибкой) вызываем метод catch и передаём ему колбэк с сообщением об ошибке
-  .catch((err) => {
-    showAlert(err.message);
+  .catch((error) => {
+    showAlert(error.message);
   });
 //Запускаем функцию вывода формы предварительного просмотра, редактирования и публикации фото на сервере
 userFotoFormSubmit();
