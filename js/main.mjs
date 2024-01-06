@@ -1,4 +1,4 @@
-//Основной модуль сайта-приложения
+//Основной модуль - точка входа сайта-приложения
 
 import { getData, showAlert } from './creates-api.mjs';
 import { renderGallery } from './renders-gallery.mjs';
